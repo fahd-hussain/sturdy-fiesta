@@ -8,13 +8,13 @@ import SideBar from './Sidebar/sidebar.comp'
 const Layout: FC<LayoutProps> = ({ children }) => {
   const [hide, setHide] = useState<boolean>(false)
 
-  const _toggleSidebar = () => setHide((prevState) => !prevState)
+  const _handleToggleSidebar = () => setHide((prevState) => !prevState)
 
   return (
     <Container>
       <Header />
       <LayoutContent>
-        <SideBar hide={hide} />
+        <SideBar hide={hide} handleToggleSidebar={_handleToggleSidebar} />
         <PageContainer>{children}</PageContainer>
       </LayoutContent>
       <Footer />
