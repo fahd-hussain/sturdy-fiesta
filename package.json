@@ -8,7 +8,7 @@
   "dependencies": {
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.0",
-    "@mui/styled-engine": "latest",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "@mui/styled-engine-sc": "latest",
     "mongodb": "^4.8.1",
     "next": "latest",
@@ -22,7 +22,9 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/styled-components": "latest",
-    "babel-plugin-styled-components": "latest",
     "typescript": "latest"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   }
 }

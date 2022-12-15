@@ -1,4 +1,3 @@
-import { Button, styled } from '@mui/material'
 import clientPromise from '../lib/mongodb'
 
 export async function getServerSideProps(_context: any) {
@@ -27,10 +26,6 @@ export async function getServerSideProps(_context: any) {
 export default function Home(props: any) {
   return (
     <div className="container">
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js with MongoDB!</a>
-      </h1>
-
       {props.isConnected ? (
         <h2 className="subtitle">You are connected to MongoDB</h2>
       ) : (
@@ -39,19 +34,6 @@ export default function Home(props: any) {
           instructions.
         </h2>
       )}
-      <SButton>Styled Button</SButton>
     </div>
   )
 }
-
-const SButton = styled(Button)`
-  color: red;
-  background-color: white;
-  width: 100px;
-  height: 50px;
-
-  &:hover {
-    color: white;
-    background-color: red;
-  }
-`
