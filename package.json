@@ -6,14 +6,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/styled-engine-sc": "latest",
     "mongodb": "^4.8.1",
     "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next-transpile-modules": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/node": "18.7.5",
-    "@types/react": "16.9.17",
-    "typescript": "4.6.3"
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/styled-components": "latest",
+    "babel-plugin-styled-components": "latest",
+    "typescript": "latest"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   }
 }
