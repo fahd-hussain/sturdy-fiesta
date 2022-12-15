@@ -7,7 +7,7 @@ module.exports = withTM({
   reactStrictMode: true,
   experimental: {
     // Enables the styled-components SWC transform
-    styledComponents: true,
+    // styledComponents: true,
   },
   webpack: (config) => {
     config.resolve.alias = {
